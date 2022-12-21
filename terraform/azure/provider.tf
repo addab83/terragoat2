@@ -1,4 +1,4 @@
-/*provider "azurerm" {
+provider "azurerm" {
   subscription_id = var.subscription_id
   version = ">= 2.0.0"
   features {}
@@ -11,8 +11,8 @@ terraform {
   backend "azurerm" {
   }
 }
-*/
 
+/*
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
   subscription_id = var.subscription_id
@@ -29,5 +29,5 @@ terraform {
     }
   }
 }
-
+*/
 
