@@ -40,7 +40,6 @@ data "azurerm_policy_assignment" "example" {
   name                 = "terragoat-policy-assignment-${var.environment}"
   #scope                = "/subscriptions/${data.azurerm_client_config.current.subscription_id}"
   scope                = "data.azurerm_subscription.current.id"
-  data.azurerm_subscription.current.id
   policy_definition_id = azurerm_policy_definition.policy-res.id
   description          = "Policy Assignment created via an Acceptance Test"
   display_name         = "My Example Policy Assignment"
