@@ -5,9 +5,9 @@ resource "azurerm_managed_disk" "example" {
   storage_account_type = "Standard_LRS"
   create_option        = "Empty"
   disk_size_gb         = 1
-  encryption_settings {
+  /*encryption_settings {
     enabled = false
-  }
+  }*/
   tags = {
     git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
     git_file             = "terraform/azure/storage.tf"
