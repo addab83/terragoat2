@@ -11,10 +11,11 @@ resource azurerm_kubernetes_cluster "k8s_cluster" {
     vm_size    = "Standard_D2_v2"
     node_count = 2
   }
-  #addon_profile {
-  #  oms_agent {
-  #    enabled = false
-  #  }
+  /*
+  addon_profile {
+    oms_agent {
+    enabled = false
+    }
     kube_dashboard {
       enabled = true
     }
@@ -33,3 +34,4 @@ resource azurerm_kubernetes_cluster "k8s_cluster" {
     yor_trace            = "6103d111-864e-42e5-899c-1864de281fd1"
   }
 }
+*/
