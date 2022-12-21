@@ -89,7 +89,8 @@ resource azurerm_network_security_group "bad_sg" {
     direction                  = "Inbound"
     name                       = "AllowRDP"
     priority                   = 300
-    protocol                   = "TCP"
+#   protocol                   = "TCP"
+    protocol                   = "Tcp"
     source_address_prefix      = "*"
     source_port_range          = "*"
     destination_port_range     = "3389-3389"
