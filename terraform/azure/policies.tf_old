@@ -47,7 +47,7 @@ data "azurerm_policy_assignment" "example" {
   parameters           = <<PARAMETERS
 {
   "allowedLocations": {
-    "value": [ "East US" ]
+    "value": [ "West Europe" ]
   }
 }
 PARAMETERS
