@@ -19,7 +19,7 @@ resource azurerm_kubernetes_cluster "k8s_cluster" {
   #  kube_dashboard {
   #    enabled = true
   #  }
-  }
+  #}
   
   role_based_access_control {
     enabled = false
