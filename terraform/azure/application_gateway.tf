@@ -18,7 +18,7 @@ resource "azurerm_subnet" "frontend" {
 resource "azurerm_application_gateway" "network" {
   name                = "example-appgateway"
   resource_group_name = "example-resourceGroup"
-  location            = "example --West-US"
+  location            = "West Europe"
 
   sku {
     name     = "Standard_Small"
